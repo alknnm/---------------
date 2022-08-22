@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Source+Sans+Pro:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Suez+One&display=swap');
 
 * {
     margin: 0;
@@ -8,12 +8,12 @@
 
 body, html {
     width: 100%;
-    height: 100%;
+    height: 2000;
 }
 
 body {
     background-color: black;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: Trebuchet MS, Helvetica;
 }
 
 header {
@@ -33,7 +33,7 @@ header #logo span {
     font-size: 1.7em;
     line-height: 45px;
     margin-left: 40px;
-    font-family: 'Roboto', serif;
+    font-family: 'Suez One', serif;
 }
 
 @media (min-widht: 701px) {
@@ -41,6 +41,10 @@ header #logo span {
         float: left;
         width: 30%;
         font-size: 1.1em;
+    }
+    #about {
+        float: right;
+        width: 67%;
     }
 }
 
@@ -50,4 +54,40 @@ header #logo span {
         width: 100%;
         font-size: 1.5em;
     }
+    #about {
+        float: left;
+        width: 100%;
+    }
 }
+
+#about {
+    text-align: center;
+    font-size: 1em;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+#about > a {color: #fff}
+
+#about > a:hover {
+    color: #b0b0b0;
+    text-decoration: underline;
+}
+
+#about > a:not(:last-child) {
+    margin-right: 7%;
+}
+
+.fixed {
+    z-index: 5000;
+    background-color: #fff;
+    border-bottom: 1px solid silver;
+}
+
+header.fixed #logo {
+    color: #343434;
+}
+
+.fixed #about a {color: #343434}
+
+.fixed #about a:hover {color: #7c7c7c}
