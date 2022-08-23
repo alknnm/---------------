@@ -8,11 +8,11 @@
 
 body, html {
     width: 100%;
-    height: 2000px;
+    height: 100%;
 }
 
 body {
-    background-color: black;
+    background-color: #fafafa;
     font-family: Trebuchet MS, Helvetica;
 }
 
@@ -91,3 +91,140 @@ header.fixed #logo {
 .fixed #about a {color: #343434}
 
 .fixed #about a:hover {color: #7c7c7c}
+
+#top {
+    width: 100%;
+    height: 1000px;
+    background-image: url(https://branchez-vous.com/wp-content/uploads/2019/06/bigstock-Macbook-Pro-With-With-Retina-D-131029490.jpg);
+    background-blend-mode: multiply;
+    background-color: #2e3a44;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    font-size: 3em;
+}
+
+@media (min-width: 1001px) {
+    #top {
+        font-size: 3em;
+        height: 1000px;
+    }
+}
+
+@media (max-width: 1000px) and (min-width: 651px) {
+    #top {
+        font-size: 2em;
+        height: 600px;
+    }
+}
+
+@media (max-width: 650px) {
+    #top {
+        font-size: 1.3em;
+        padding-top: 50%;
+        height: 500px;
+    }
+}
+
+@media (max-width: 450px) {
+    #top {
+        font-size: 0.9em;
+    }
+}
+
+#top h1 {
+    padding-top: 20%;
+}
+
+#top h3 {
+    color: #ccc;
+}
+
+#main {
+    float: left;
+    background-color: #f6f6f6;
+    border-top: 2px solid silver;
+    color: #484848;
+    font-size: 1.3em;
+}
+
+@media (min-width: 1401px) {
+    padding: 100px 20%;
+    width: 60%;
+}
+
+@media (max-width: 1400px) {
+    padding: 100px 10%;
+    width: 80%;
+}
+
+@media (max-width: 700px) {
+    #main div {
+        width: 98%!important;
+        margin-bottom: 20px;
+    }
+}
+
+#main div {
+    width: 48%;
+    margin-right: 2%;
+    float: left;
+}
+
+#main h2 {
+    font-size: 3em;
+}
+
+#main span {
+    color: #a0a0a0;
+}
+
+#overview {
+    float: left;
+    background-image: url(https://changellenge.com/upload/iblock/543/5434b661ef2f0c97dd1cee96caf3575f.jpg);
+    background-blend-mode: multiply;
+    background-color: #4f1c75;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+#overview h2 {
+    font-size: 4em;
+}
+
+#overview h4 {
+    color: #ccc;
+    font-size: 1.5em;
+}
+
+#overview .img {
+    float: left;
+    width: 30%;
+    margin-right: 5%;
+    margin-top: 50px;
+}
+
+#overview .img:nth-child(odd) {
+    margin-left: 18%;
+}
+
+#overview img {
+    background: #fafafa;
+    padding: 5px;
+    border: 2px solid silver;
+    float: left;
+    width: 100%;
+    max-width: 350px;
+}
+
+#overview span {
+    float: left;
+    width: 100%;
+    font-size: 2em;
+    margin-top: 10px;
+}
+
